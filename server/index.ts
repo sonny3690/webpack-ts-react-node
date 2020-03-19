@@ -1,11 +1,11 @@
 import path from 'path';
 import fs from 'fs';
 import React from 'react';
-import express, {Request, Response} from 'express';
-import ReactDOMServer from 'react-dom/server';
+import express, { Request, Response } from 'express';
 import App from '../src/App';
+import ReactDOMServer from 'react-dom/server';
 
-const PORT = process.env.PORT || '3005';
+const PORT = process.env.PORT || 8081;
 const app = express();
 
 app.use(express.static('./build'));
